@@ -1,4 +1,9 @@
-const LOC = { name: "East Brunswick, NJ", lat: 40.4286, lon: -74.4157, tz: "America/New_York" };
+const LOC = { 
+  name: "Olive Branch, MS", 
+  lat: 34.9887313, 
+  lon: -89.8487534, 
+  tz: "Pacific/Chatham" 
+};
 
 function getDayType(date) {
   const ref = new Date(2026, 3, 19); // Update the current date because why not.
@@ -8,7 +13,7 @@ function getDayType(date) {
   ref.setHours(0, 0, 0, 0);
 
   const diffDays = Math.round((d - ref) / 86400000);
-  return (Math.abs(diffDays) % 2 === 0) ? "A Day" : "B Day"; // Set to double A days for 3/19/26 and then double B day for 3/20/26 and then it will be reset to A - B so it keep track again.
+  return (Math.abs(diffDays) % 2 === 0) ? "C Day" : "C Day"; // Set to double A days for 3/19/26 and then double B day for 3/20/26 and then it will be reset to A - B so it keep track again.
 }
 
 const icons = {
