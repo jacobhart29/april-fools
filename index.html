@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="refresh" content="3600">
-  <title>Window Display</title>
+  <title>SYSTEM CRITICAL - Window Display</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -21,14 +20,14 @@
     <main>
       <div class="time-display">
         <div class="time-row">
-          <span class="font-display time-digit text-glow" id="hours">--</span>
+          <span class="font-display time-digit text-glow" id="hours">00</span>
           <span class="font-display time-colon">:</span>
-          <span class="font-display time-digit text-glow" id="minutes">--</span>
+          <span class="font-display time-digit text-glow" id="minutes">00</span>
           <span class="font-display time-colon">:</span>
-          <span class="font-display time-seconds" id="seconds">--</span>
-          <span class="font-display time-period" id="period">--</span>
+          <span class="font-display time-seconds" id="seconds">00</span>
+          <span class="font-display time-period" id="period">??</span>
         </div>
-        <p class="date-display" id="date">Loading...</p>
+        <p class="date-display" id="date">Calculating Timeline...</p>
       </div>
 
       <div class="weather-container">
@@ -39,28 +38,28 @@
               <div>
                 <div class="weather-temp">
                   <span class="font-display temp-value" id="temp">--</span>
-                  <span class="font-display temp-unit">°F</span>
+                  <span class="font-display temp-unit">°?</span>
                 </div>
-                <p class="weather-condition" id="condition">Loading...</p>
-                <p class="weather-location font-display">IDK</p>
+                <p class="weather-condition" id="condition">Scanning...</p>
+                <p class="weather-location font-display">THE MOON (MS BRANCH)</p>
               </div>
             </div>
             <div class="weather-details">
               <div class="detail-card glass-card">
                 <svg class="icon-primary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4v10.54a4 4 0 1 1-4 0V4a2 2 0 0 1 4 0Z"/></svg>
-                <div><p class="detail-label">Feels Like</p><p class="detail-value font-display"><span id="feels-like">--</span>°F</p></div>
+                <div><p class="detail-label">Gravity</p><p class="detail-value font-display" id="feels-like">None</p></div>
               </div>
               <div class="detail-card glass-card">
                 <svg class="icon-rain" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg>
-                <div><p class="detail-label">Humidity</p><p class="detail-value font-display"><span id="humidity">--</span>%</p></div>
+                <div><p class="detail-label">Reality</p><p class="detail-value font-display" id="humidity">0%</p></div>
               </div>
               <div class="detail-card glass-card">
                 <svg class="icon-cloud" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.7 7.7a2.5 2.5 0 1 1 1.8 4.3H2"/><path d="M9.6 4.6A2 2 0 1 1 11 8H2"/><path d="M12.6 19.4A2 2 0 1 0 14 16H2"/></svg>
-                <div><p class="detail-label">Wind</p><p class="detail-value font-display"><span id="wind">--</span> mph</p></div>
+                <div><p class="detail-label">Wind</p><p class="detail-value font-display" id="wind">Mach 1</p></div>
               </div>
               <div class="detail-card glass-card">
                 <svg style="color: var(--muted-foreground)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
-                <div><p class="detail-label">Visibility</p><p class="detail-value font-display"><span id="visibility">--</span> miles</p></div>
+                <div><p class="detail-label">Visibility</p><p class="detail-value font-display" id="visibility">404</p></div>
               </div>
             </div>
           </div>
